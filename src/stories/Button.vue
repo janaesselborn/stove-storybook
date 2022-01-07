@@ -21,6 +21,10 @@ export default {
         return ['primary', 'secondary', 'ghost'].indexOf(value) !== -1;
       },
     },
+    fullWidth: {
+      type: Boolean,
+      default: true
+    }
   },
 
   emits: ['click'],
@@ -33,6 +37,7 @@ export default {
         'stove-button--primary': props.type === 'primary',
         'stove-button--secondary': props.type === 'secondary',
         'stove-button--ghost': props.type === 'ghost',
+        'stove-button--full-width': props.fullWidth
       })),
       onClick() {
         emit('click');

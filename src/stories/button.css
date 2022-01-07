@@ -21,3 +21,6 @@
 .stove-button--ghost {
   background-color: transparent;
 }
+.stove-button--full-width {
+  width: 100%;
+}
